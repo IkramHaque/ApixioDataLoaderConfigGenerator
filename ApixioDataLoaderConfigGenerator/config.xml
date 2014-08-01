@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+
+	<workingDir>c:/temp/</workingDir>
+	<defaultAuthority>HICN</defaultAuthority>
+	<primaryAuthority>HICN</primaryAuthority>
+	
+	<sourceSystem>CMS</sourceSystem>
+	<sourceType>CMS_KNOWN</sourceType>
+	<sourceDate>2014-09-01</sourceDate>
+	
+	<workflow>
+		<deleteOnClose>false</deleteOnClose>
+		<validation>
+			<enabled>false</enabled>
+		</validation>
+		<map>
+			<enabled>true</enabled>
+			<overwrite>true</overwrite>
+		</map>
+		<reduce>
+			<enabled>true</enabled>
+			<overwrite>true</overwrite>
+		</reduce>
+		<output>
+			<enabled>true</enabled>
+			<path>c:/temp/patients.json</path>
+		</output>
+		<upload>
+			<enabled>false</enabled>
+			<overwrite>true</overwrite>
+		</upload>
+	</workflow>
+	
+	<codingSystems>
+		<CPTLabel>CPT</CPTLabel>
+		<ICD9DXLabel>ICD9</ICD9DXLabel>
+		<ICD9SGLabel>ICD9SG</ICD9SGLabel>		
+	</codingSystems>
+	
+	<security>
+		<key>blackDogblackDog</key>
+		<algorithm>AES</algorithm>
+	</security>
+
+	<endpoint>
+		<server>https://stagedr.apixio.com:8443</server>
+		<batchName>backload</batchName>
+		<username>apxdemot0312</username>
+		<password>Hadoop.4522</password>
+	</endpoint>	
+	
+	
+	<coverage>
+		<path>${classpath}CoverageEncrypted.csv</path>
+		<sourceSystem>CMS</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-09-01</sourceDate>
+		<linesToSkip>1</linesToSkip>	
+		<editType>ACTIVE</editType>
+	</coverage>
+
+	<crosswalk>
+		<path>${classpath}CrosswalkEncrypted.csv</path>
+		<sourceSystem>CMS</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-09-01</sourceDate>
+		<linesToSkip>1</linesToSkip>	
+		<editType>ACTIVE</editType>
+	</crosswalk>
+
+	<demographics>
+		<path>${classpath}DemographicsEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>	
+		<editType>ACTIVE</editType>
+	</demographics>
+	
+	<documents>
+		<path>${classpath}DocumentsEncrypted.csv</path>
+		<sourceSystem>CMS01</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-19</sourceDate>
+		<linesToSkip>1</linesToSkip>	
+		<editType>ACTIVE</editType>			
+	</documents>
+
+	<encounters>
+		<path>${classpath}EncountersEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</encounters>
+	
+	<events>
+		<path>${classpath}EventsEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</events>
+	
+	<problems>
+		<path>${classpath}ProblemsEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</problems>
+		
+	<problemsmora>
+		<path>${classpath}ProblemsMORAEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</problemsmora>
+
+	<problemsmorb>
+		<path>${classpath}ProblemsMORBEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</problemsmorb>
+
+	<problemsmorc>
+		<path>${classpath}ProblemsMORCEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</problemsmorc>
+	
+	<!-- NOTE: Unlike other base objects, this value is a directory rather than a file -->
+	<problemsraps>
+		<path>C:/Users/ddreon/Desktop/raps_return</path> 
+		<sourceSystem>RAPS</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-08-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</problemsraps>
+
+	<procedures>
+		<path>${classpath}ProceduresEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</procedures>
+	
+	<providers>
+		<path>${classpath}ProvidersEncrypted.csv</path>
+		<sourceSystem>Scripps1</sourceSystem>
+		<sourceType>CMS_KNOWN</sourceType>
+		<sourceDate>2014-06-01</sourceDate>
+		<linesToSkip>1</linesToSkip>				
+		<editType>ACTIVE</editType>			
+	</providers>
+	
+</application>
+
