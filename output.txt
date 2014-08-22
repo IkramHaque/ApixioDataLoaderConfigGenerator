@@ -1,0 +1,56 @@
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [com.apixio.loader] additivity to [false].
+log4j: Level value for com.apixio.loader is  [INFO+WARN+ERROR].
+log4j: com.apixio.loader level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [com.apixio.loader].
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [upload.logger] additivity to [false].
+log4j: Level value for upload.logger is  [DEBUG+INFO+WARN+ERROR].
+log4j: upload.logger level set to DEBUG
+log4j: Class name: [org.apache.log4j.FileAppender]
+log4j: Setting property [file] to [/upload.log].
+log4j: Setting property [append] to [false].
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{ISO8601} %-5p [%c{1}] - %m%n].
+log4j: setFile called: /upload.log, false
+log4j: Adding appender named [upload.appender] to category [upload.logger].
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [error.logger] additivity to [false].
+log4j: Level value for error.logger is  [ERROR].
+log4j: error.logger level set to ERROR
+log4j: Class name: [org.apache.log4j.FileAppender]
+log4j: Setting property [file] to [/error.log].
+log4j: Setting property [append] to [false].
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{ISO8601} %-5p [%c{1}] - %m%n].
+log4j: setFile called: /error.log, false
+log4j: Adding appender named [error.appender] to category [error.logger].
+log4j: Level value for root is  [ERROR].
+log4j: root level set to ERROR
+log4j: Adding appender named [console] to category [root].
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Coverage edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Crosswalk edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Demographics edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Documents edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Encounters edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Events edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Problems edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - ProblemsMORA edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - ProblemsMORB edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - ProblemsMORC edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - ProblemsRAPS edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Procedures edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 WARN  PatientLoader:409 - Providers edit type is not a correct value. Skipping this input.
+2014-08-05 11:34:06 INFO  PatientLoader:494 - Initialize phase done
+2014-08-05 11:34:06 INFO  PatientLoader:500 - Validate phase is disabled. Continuing...
+2014-08-05 11:34:09 INFO  PatientLoader:551 - Map phase done. 0 total records in mapped database. Continuing...
+2014-08-05 11:34:12 INFO  PatientLoader:585 - Reduce phase done. 0 patient records in reduced database. Continuing...
+2014-08-05 11:34:12 INFO  PatientLoader:630 - Output phase done. Continuing...
+2014-08-05 11:34:12 INFO  PatientLoader:638 - Upload phase is disabled. 0 patient records in upload database. Continuing...
